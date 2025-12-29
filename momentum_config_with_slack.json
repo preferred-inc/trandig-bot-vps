@@ -1,0 +1,10 @@
+{
+  "exchange": "binance",
+  "api_key": "YOUR_API_KEY_HERE",
+  "api_secret": "YOUR_API_SECRET_HERE",
+  "symbol": "BTC/JPY",
+  "lookback": 20,
+  "threshold": 0.02,
+  "stop_loss_pct": 10,
+  "slack_webhook_url": "YOUR_SLACK_WEBHOOK_URL"
+}

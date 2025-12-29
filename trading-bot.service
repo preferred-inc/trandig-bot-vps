@@ -1,0 +1,16 @@
+[Unit]
+Description=Momentum Trading Bot for BTC/JPY
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/trandig-bot-vps
+ExecStart=/root/trandig-bot-vps/venv/bin/python3 /root/trandig-bot-vps/momentum_bot_btcjpy_with_slack.py
+Restart=always
+RestartSec=60
+StandardOutput=append:/root/trandig-bot-vps/momentum_bot.log
+StandardError=append:/root/trandig-bot-vps/momentum_bot.log
+
+[Install]
+WantedBy=multi-user.target
